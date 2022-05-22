@@ -1,0 +1,297 @@
+/* GLOBALES */
+
+:root {
+    --fuenteGral: 'Mukta', sans-serif;
+    --fuenteLogo: 'Kiwi Maru', serif;   
+    --fuenteTitulo: 'Grand Hotel', cursive;
+
+    --verde: #008c45;
+    --blanco: #f4f5f0;
+    --rojo: #cd212a;
+    --negro: #0c0c0cff;
+    --gris: #e4e4e4;
+    --grisOscuro: #616161;
+}
+
+html {
+    font-size: 62.5%;   /* 1 rem */
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--fuenteGral);
+    background-color: var(--gris);
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* GLOBALES */
+
+h1 {
+    font-family: var(--fuenteLogo);
+    font-size: 5rem;
+    font-weight: bolder;
+    
+}
+
+h2, h3, h4 {
+    font-family: var(--fuenteTitulo);
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2rem;
+} 
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.fondo-fade {
+    background-image: linear-gradient(to bottom, var(--negro) 0%, var(--gris) 2%);
+}
+
+/* ---------------------------------------------------------------------------------------- */
+/* UTILIDADES */ 
+
+
+.texto-centrado {
+    text-align: center;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* HEADER */ 
+
+.header-bg {
+    background: linear-gradient(to right, var(--verde) 0, var(--verde) 33.3%, var(--blanco) 33.3%, var(--blanco) 66.6%, var(--rojo) 66.6%, var(--rojo) 100%);
+}
+
+.header-contenedor {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.fondo-negro {
+    background-color: var(--negro);
+}
+
+.navegacion-principal {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion-enlace {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.bandera div{
+    color: var(--blanco);
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+
+/* IMAGEN DE FONDO */
+
+.fondo {
+    background-image: url(../img/img-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .fondo {
+        height: 30rem;
+    }
+}
+
+.contenido-fondo {
+    position: absolute;
+    background-color: rgb(0 0 0 / 75%);
+    width: 100%;
+    height: 100%;
+}
+
+.contenido-fondo h2 {
+    color: var(--blanco);
+    text-align: center;
+    padding: 3rem 0 0 0;
+    font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+    .contenido-fondo h2 {
+        padding: 10rem 0 0 0;
+        
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------*/
+/* MENU ICONO */
+
+.menu-img {
+    margin-top: 8rem;
+    height: 8rem;
+    width: 8rem;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+/* PRODUCTOS */
+
+.icono-prod {
+    height: 4rem;
+}
+
+.productos {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+    .productos {
+       grid-template-rows: none;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 2rem;
+       padding-top: 5rem;
+       padding-bottom: 16rem;
+    }
+}
+
+
+.bloque {
+    display: grid;
+    grid-template-rows: .3fr .7fr;
+    border-bottom: 2px solid var(--grisOscuro);
+    text-decoration: none;
+    gap: 1.5rem;
+    color: var(--negro);
+}
+
+@media (min-width: 768px) {
+    .bloque {
+        grid-template-rows: 1fr 2fr;
+        justify-content: center;
+        align-items: center;
+        border-bottom: none;
+        border-right: 2px solid var(--grisOscuro);
+        padding-right: 2rem;
+    }
+}
+
+
+
+.bloque:last-of-type {
+    border: none;
+}
+
+.alinear-icono {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.alinear-icono h2 {
+    margin: 0;
+}
+
+.contenedorImg {
+    max-width: 120rem;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .contenedorImg {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.imagenProd {
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .imagenProd {
+        transition: transform .5s ease;
+    }
+}
+
+@media (min-width: 768px) {
+    .imagenProd:hover {
+        transform: scale(1.1);
+        overflow: hidden;
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------------------*/
+/* FOOTER */
+
+.footer {
+    background-color: var(--negro);
+    text-align: center;
+    height: 5rem;
+}
+
+.footer p {
+    color: var(--blanco);
+    margin: 0;
+}
+
+.footer-padding {
+    padding: 1rem 0;
+}
+
+
+/*------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------*/
+
+                                            /* PIZZA ROJA */
+
+
+.rossaTitulo {
+    margin: 0;
+    padding-top: 4rem;
+}
