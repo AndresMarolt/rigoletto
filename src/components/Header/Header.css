@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap");
+.flag {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #008c45), color-stop(33.3%, #008c45), color-stop(33.3%, #f4f5f0), color-stop(66.6%, #f4f5f0), color-stop(66.6%, #cd212a), to(#cd212a));
+  background: linear-gradient(to right, #008c45 0, #008c45 33.3%, #f4f5f0 33.3%, #f4f5f0 66.6%, #cd212a 66.6%, #cd212a 100%);
+}
+
+.flag .header_logo {
+  padding: 10px 0;
+  text-align: center;
+  font-family: "Kiwi Maru", serif;
+  font-size: 50px;
+  margin: 0;
+}
+/*# sourceMappingURL=Header.css.map */

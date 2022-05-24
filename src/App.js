@@ -1,0 +1,17 @@
+import logo from './logo.svg';
+import './App.css';
+import Header from '../src/components/Header/Header';
+
+function App() {
+  return (
+    <div className="App">
+      <Header />
+
+      <main></main>
+
+      <footer></footer>
+    </div>
+  );
+}
+
+export default App;
