@@ -1,8 +1,8 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Mukta&display=swap');
+$fuenteGral: 'Mukta', sans-serif;
 
 nav {
-    padding: 1rem;
+    padding: 5px;
     background-color: black;
 
     ul {
@@ -19,7 +19,6 @@ nav {
                 color: white;
                 text-decoration: none;
                 font-size: 16px;
-                font-weight: bolder;
             }
         }
     }
@@ -33,5 +32,7 @@ nav {
 }
 
 @media(min-width: 992px) {
-    
+    nav ul li .navegacion-enlace {
+        font-size: 20px;
+    }
 }

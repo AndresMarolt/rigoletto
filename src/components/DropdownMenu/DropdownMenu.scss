@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+$fuenteLogo: 'Kiwi Maru', serif;   
+$fuenteHeading: 'Grand Hotel', cursive;
+
+$verde: #008c45;
+$blanco: #f4f5f0;
+$rojo: #cd212a;
+$negro: #0c0c0cff;
+$gris: #e4e4e4;
+$grisOscuro: #616161;
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+    .dropbtn {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        background-color: unset;
+        
+        /* Dropdown button on hover & focus */
+        &:hover, .dropbtn:focus {
+            
+        }
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        
+        /* Links inside the dropdown */
+        a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            
+            /* Change color of dropdown links on hover */
+            &:hover {
+            
+            }
+        }
+    }
+    
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .showDropdown {
+        display:block;
+    }
+}
+
+
+
+
+
+
+
+
+@media(min-width: 768px) {
+
+}
+
+@media(min-width: 992px) {
+    
+}
