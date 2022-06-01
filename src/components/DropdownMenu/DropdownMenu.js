@@ -10,7 +10,10 @@ const DropdownMenu = () => {
     const [show, setShow] = useState(false);
     const [showPizze, setShowPizze] = useState(false);
 
-    console.log(menuRef.current);
+    window.addEventListener("click", e => {
+        console.log(e.target);
+    })
+
     useEffect(() => {
         const handleClickOutsideDropdown = (event) => {
             console.log(event.target);

@@ -6,6 +6,7 @@ const Header = () => {
         <header>
             <div className="flag">
                 <h1 className="header_logo">Rigoletto</h1>
+                <p>Tra </p>
             </div>
             
             <NavBar/>
