@@ -4,11 +4,15 @@
   background: linear-gradient(to right, #008c45 0, #008c45 33.3%, #f4f5f0 33.3%, #f4f5f0 66.6%, #cd212a 66.6%, #cd212a 100%);
 }
 .flag .header_logo {
-  padding: 10px 0;
   text-align: center;
   font-family: "Kiwi Maru", serif;
   font-size: 50px;
   margin: 0;
+}
+.flag .header_text {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
 }
 
 .hero {

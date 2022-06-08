@@ -15,11 +15,16 @@ $grisOscuro: #616161;
     background: linear-gradient(to right, $verde 0, $verde 33.3%, $blanco 33.3%, $blanco 66.6%, $rojo 66.6%, $rojo 100%);
     
     .header_logo {
-        padding: 10px 0;
         text-align: center;
         font-family: $fuenteLogo;
         font-size: 50px;
         margin: 0;
+    }
+
+    .header_text {
+        text-align: center;
+        margin: 0;
+        font-size: 12px;
     }
 }
 
