@@ -1,56 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
 .flag {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0, #008c45), color-stop(33.3%, #008c45), color-stop(33.3%, #f4f5f0), color-stop(66.6%, #f4f5f0), color-stop(66.6%, #cd212a), to(#cd212a));
   background: linear-gradient(to right, #008c45 0, #008c45 33.3%, #f4f5f0 33.3%, #f4f5f0 66.6%, #cd212a 66.6%, #cd212a 100%);
 }
+
 .flag .header_logo {
   text-align: center;
   font-family: "Kiwi Maru", serif;
   font-size: 50px;
   margin: 0;
 }
+
 .flag .header_text {
   text-align: center;
   margin: 0;
   font-size: 12px;
 }
-
-.hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../public/img-fondo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.75);
-  height: 150px;
-  position: relative;
-  box-shadow: 0px 5px 5px black;
-}
-.hero-content {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero-content h2 {
-  margin: 0;
-  color: white;
-  font-size: 25px;
-  font-family: "Grand Hotel", cursive;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    height: 300px;
-  }
-  .hero-content h2 {
-    font-size: 35px;
-  }
-}
-@media (min-width: 992px) {
-  .hero {
-    height: 400px;
-  }
-  .hero-content h2 {
-    font-size: 50px;
-  }
-}/*# sourceMappingURL=Header.css.map */
+/*# sourceMappingURL=Header.css.map */

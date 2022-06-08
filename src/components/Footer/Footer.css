@@ -1,1 +1,10 @@
+footer {
+  background-color: black;
+}
+
+footer .leyenda {
+  color: white;
+  margin: 0;
+  padding: 2rem 0;
+}
 /*# sourceMappingURL=Footer.css.map */

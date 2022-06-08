@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+$fuenteLogo: 'Kiwi Maru', serif;   
+$fuenteHeading: 'Grand Hotel', cursive;
+
+$verde: #008c45;
+$blanco: #f4f5f0;
+$rojo: #cd212a;
+$negro: #0c0c0cff;
+$gris: #e4e4e4;
+$grisOscuro: #616161;
+
+
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../../public/img-fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 75%);
+    height: 150px;
+    position: relative;
+    box-shadow: 0px 5px 5px black;
+
+    &-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            margin: 0;
+            color: white;
+            font-size: 25px;
+            font-family: $fuenteHeading;
+        }
+    }
+}
+
+.presentacion {
+    margin-top: 2rem;
+    width: 100%;
+    position: relative;
+
+    &-img {
+        width: 100%;
+    }
+
+    &-over {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+
+        &-texto {
+            font-weight: bold;
+            color: white;
+
+            span {
+              font-family: $fuenteLogo;
+              font-size: 20px;
+            }
+        }
+
+        .linea {
+            border-top: 2px solid gold;
+            width: 50%;
+            display: flex;
+        }
+    }
+}
+
+
+@media(min-width: 768px) {
+    .hero {
+        height: 300px;
+
+        &-content h2{
+            font-size: 35px;
+        }
+    }
+
+    .presentacion {
+        display: flex;
+        position: static;
+        justify-content: flex-end;
+        &-img {
+            width: 60%;
+            align-self: flex-end;
+        }
+
+        &-over {
+            position: static;
+
+            &-texto {
+                color: black;
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .hero {
+        height: 400px;
+
+        &-content h2{
+            font-size: 50px;
+        }
+    }
+}

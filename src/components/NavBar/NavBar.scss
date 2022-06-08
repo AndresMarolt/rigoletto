@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Mukta&display=swap');
-$fuenteGral: 'Mukta', sans-serif;
+
 
 nav {
     padding: 5px;
@@ -22,6 +21,17 @@ nav {
             font-size: 16px;
             border: none;
         }
+
+        .cartwidget {
+            color: white;
+            display: flex;
+            gap: 5px;
+
+            &-cantidad {
+                margin: 0;
+            }
+        }
+
     }
 }
 

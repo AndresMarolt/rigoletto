@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../../../public/img-fondo.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../../public/img-fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  height: 150px;
+  position: relative;
+  -webkit-box-shadow: 0px 5px 5px black;
+          box-shadow: 0px 5px 5px black;
+}
+
+.hero-content {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-content h2 {
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  font-family: "Grand Hotel", cursive;
+}
+
+.presentacion {
+  margin-top: 2rem;
+  width: 100%;
+  position: relative;
+}
+
+.presentacion-img {
+  width: 100%;
+}
+
+.presentacion-over {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+.presentacion-over-texto {
+  font-weight: bold;
+  color: white;
+}
+
+.presentacion-over-texto span {
+  font-family: "Kiwi Maru", serif;
+  font-size: 20px;
+}
+
+.presentacion-over .linea {
+  border-top: 2px solid gold;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    height: 300px;
+  }
+  .hero-content h2 {
+    font-size: 35px;
+  }
+  .presentacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .presentacion-img {
+    width: 60%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .presentacion-over {
+    position: static;
+  }
+  .presentacion-over-texto {
+    color: black;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    height: 400px;
+  }
+  .hero-content h2 {
+    font-size: 50px;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

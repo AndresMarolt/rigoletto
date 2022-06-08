@@ -1,6 +1,6 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Mukta&display=swap');
 :root {
-  --fuenteGral: 'Mukta', sans-serif;
+  --fuenteGral: 'Lato', sans-serif;
   --fuenteLogo: 'Kiwi Maru', serif;   
   --fuenteTitulo: 'Grand Hotel', cursive;
 
@@ -15,7 +15,6 @@
 .Container {
   width: 95%;
   margin: 0 auto;
-  color: red;
 }
 
 @media(min-width: 768px) {
