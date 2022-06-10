@@ -12,6 +12,10 @@
   --grisOscuro: #616161;
 }
 
+body {
+  background-color: var(--blanco);
+}
+
 .Container {
   width: 95%;
   margin: 0 auto;

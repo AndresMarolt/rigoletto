@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+.contacto_titulo {
+  font-family: "Kiwi Maru", serif;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.contacto {
+  margin: 50px auto;
+}
+
+.contacto form {
+  background-color: #dadada;
+  padding: 10px 0;
+}
+
+.contacto form .group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.contacto form .group input {
+  padding: 10px;
+}
+/*# sourceMappingURL=Contact.css.map */

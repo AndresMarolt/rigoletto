@@ -1,18 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
-
-$fuenteLogo: 'Kiwi Maru', serif;   
-$fuenteHeading: 'Grand Hotel', cursive;
-
-$verde: #008c45;
-$blanco: #f4f5f0;
-$rojo: #cd212a;
-$negro: #0c0c0cff;
-$gris: #e4e4e4;
-$grisOscuro: #616161;
+@import "./../../utilities/named_variables.scss";
 
 .flag {
     background: linear-gradient(to right, $verde 0, $verde 33.3%, $blanco 33.3%, $blanco 66.6%, $rojo 66.6%, $rojo 100%);
+    position: relative;
     
     .header_logo {
         text-align: center;
@@ -25,5 +15,45 @@ $grisOscuro: #616161;
         text-align: center;
         margin: 0;
         font-size: 12px;
+    }
+
+    .header_rrss {
+        display: none;
+    }
+}
+
+
+@media(min-width: 768px) {
+    .flag {
+        .header_rrss {
+            width: 15%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 70%;
+            right: 5%;
+
+            .rrss_icon {
+                width: 100%;
+                height: 20px;
+                color: $blanco;
+            }
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .flag {
+        .header_rrss {
+            width: 10%;
+            top: 65%;
+            right: 5%;
+
+            .rrss_icon {
+                width: 100%;
+                height: 25px;
+                color: $blanco;
+            }
+        }
     }
 }

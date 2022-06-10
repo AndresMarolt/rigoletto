@@ -1,43 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
-
-$fuenteLogo: 'Kiwi Maru', serif;   
-$fuenteHeading: 'Grand Hotel', cursive;
-
-$verde: #008c45;
-$blanco: #f4f5f0;
-$rojo: #cd212a;
-$negro: #0c0c0cff;
-$gris: #e4e4e4;
-$grisOscuro: #616161;
-
-
-
-.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../../public/img-fondo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 75%);
-    height: 200px;
-    position: relative;
-    margin-bottom: 50px;
-
-    &-content {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        h2 {
-            margin: 0;
-            color: white;
-            font-size: 25px;
-            font-family: $fuenteHeading;
-        }
-    }
-}
+@import "./../../utilities/named_variables.scss";
 
 .presentacion {
     margin: 20px 0;
@@ -147,15 +108,8 @@ $grisOscuro: #616161;
 }
 
 
-@media(min-width: 768px) {
-    .hero {
-        height: 300px;
-        
-        &-content h2{
-            font-size: 35px;
-        }
-    }
 
+@media(min-width: 768px) {
     .presentacion {
         display: flex;
         &-img {
@@ -165,7 +119,7 @@ $grisOscuro: #616161;
 
         &-over {
             top: 10%;
-            left: 20%;
+            left: 10%;
             width: 40%;
             position: absolute;
 
@@ -192,11 +146,12 @@ $grisOscuro: #616161;
                     margin-bottom: 30px;
                 }
             }
+
         }
 
         &-over-derecha {
             top: 10%;
-            left: 20%;
+            right: 10%;
             width: 40%;
             position: absolute;
     
@@ -232,15 +187,8 @@ $grisOscuro: #616161;
     }
 }
 
+
 @media(min-width: 992px) {
-    .hero {
-        height: 500px;
-
-        &-content h2{
-            font-size: 50px;
-        }
-    }
-
     .presentacion {
         &-img {
             height: 800px;
@@ -248,7 +196,7 @@ $grisOscuro: #616161;
 
         &-over {
             top: 20%;
-            left: 18%;
+            left: 12%;
 
             &-texto {
                 font-size: 18px;
@@ -272,7 +220,7 @@ $grisOscuro: #616161;
 
         &-over-derecha {
             top: 20%;
-            left: 18%;
+            right: 12%;
 
             &-texto {
                 font-size: 18px;

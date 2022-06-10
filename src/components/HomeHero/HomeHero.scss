@@ -1,0 +1,46 @@
+@import "./../../utilities/named_variables.scss";
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../../public/img-fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 75%);
+    height: 200px;
+    position: relative;
+    margin-bottom: 50px;
+
+    &-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            margin: 0;
+            color: white;
+            font-size: 25px;
+            font-family: $fuenteHeading;
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    .hero {
+        height: 300px;
+        
+        &-content h2{
+            font-size: 35px;
+        }
+    }
+}
+
+@media(min-width: 992px) {
+    .hero {
+        height: 500px;
+
+        &-content h2{
+            font-size: 50px;
+        }
+    }
+}
