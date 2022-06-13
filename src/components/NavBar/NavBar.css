@@ -4,39 +4,60 @@ nav {
   padding: 5px;
   background-color: black;
 }
+
 nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
 }
+
 nav ul li {
   list-style-type: none;
   padding: 5px 0;
 }
+
 nav ul .navegacion-enlace {
   color: white;
   text-decoration: none;
   font-size: 16px;
   border: none;
 }
+
 nav ul .cartwidget {
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 5px;
 }
+
 nav ul .cartwidget-cantidad {
   margin: 0;
 }
 
 @media (min-width: 768px) {
   nav ul {
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
+
 @media (min-width: 992px) {
   nav ul li .navegacion-enlace {
     font-size: 18px;
   }
-}/*# sourceMappingURL=NavBar.css.map */
+}
+/*# sourceMappingURL=NavBar.css.map */
