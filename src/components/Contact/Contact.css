@@ -1,36 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
+.contact {
+  position: relative;
+  z-index: 10;
+}
+
+.fondo-contactos {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  opacity: 0.2;
+  height: 100%;
+}
+
 .contacto_titulo {
+  z-index: 1000;
+  position: relative;
   font-family: "Kiwi Maru", serif;
+  font-weight: lighter;
   text-align: center;
-  margin-top: 30px;
-  font-size: 40px;
+  padding-top: 30px;
+  font-size: 30px;
 }
 
 .contacto {
-  margin: 50px auto;
+  position: relative;
+  z-index: 1000;
+  margin: 50px auto 0 auto;
+  padding-bottom: 50px;
 }
-
 .contacto form {
-  background-color: #dadada;
   padding: 10px 0;
+  width: 100%;
 }
-
 .contacto form .group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 10px;
 }
-
 .contacto form .group input {
   padding: 10px;
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 10px;
 }
-/*# sourceMappingURL=Contact.css.map */
+.contacto form .group textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid rgb(177, 177, 177);
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.btn-container .btn {
+  border: none;
+  font-family: "Kiwi Maru", serif;
+  width: 50%;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+  background-color: #008c45;
+  color: #f4f5f0;
+  padding: 12px 0;
+}/*# sourceMappingURL=Contact.css.map */

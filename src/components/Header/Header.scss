@@ -3,9 +3,20 @@
 .flag {
     background: linear-gradient(to right, $verde 0, $verde 33.3%, $blanco 33.3%, $blanco 66.6%, $rojo 66.6%, $rojo 100%);
     position: relative;
-    
+
+    .d-flex {
+        display: flex;
+    }
+
+    .home_link {
+        text-decoration: none;
+        color: $negro;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        z-index: 10;
+    }
+
     .header_logo {
-        text-align: center;
         font-family: $fuenteLogo;
         font-size: 50px;
         margin: 0;
@@ -21,7 +32,6 @@
         display: none;
     }
 }
-
 
 @media(min-width: 768px) {
     .flag {
@@ -46,7 +56,7 @@
     .flag {
         .header_rrss {
             width: 10%;
-            top: 65%;
+            top: 40%;
             right: 5%;
 
             .rrss_icon {

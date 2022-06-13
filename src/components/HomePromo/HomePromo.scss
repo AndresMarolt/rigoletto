@@ -30,8 +30,13 @@
             color: #FFF;
             transition: all 0.3s;
             position: relative;
+
+            span {
+                font-family: $fuenteLogo;
+
+            }
         }
-      }
+    }
 }
 
 @media(min-width: 768px) {
@@ -51,15 +56,11 @@
         width: 50%;
         .box {
             width: 49%;
-            .btn {
-
-            }
 
             .btn-one {
 
                 span {
                     transition: all 0.3s;
-                    font-family: $fuenteLogo;
                 }
 
                 &::before {

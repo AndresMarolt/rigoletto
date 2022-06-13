@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMotorcycle } from '@fortawesome/free-solid-svg-icons'
 
-
 const CartWidget = () => {
     return(
         <div className='cartwidget'>
